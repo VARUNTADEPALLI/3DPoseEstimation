@@ -23,7 +23,8 @@ The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbo
 * [Requirements](#requirements)
 * [Prerequisites](#prerequisites)
 * [Pre-trained model](#pre-trained-model)
-* [C++ demo](#cpp-demo)
+* [Conversion to OpenVINO format](#openvino)
+* [Local Demo](#Local-demo)
 * [Python demo](#python-demo)
 * [Citation](#citation)
 
@@ -42,7 +43,7 @@ The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbo
 The model expects normalized image (mean=[128, 128, 128], scale=[1/256, 1/256, 1/256]) in planar BGR format.
 Pre-trained on COCO model is available at: https://download.01.org/opencv/openvino_training_extensions/models/human_pose_estimation/checkpoint_iter_370000.pth.
 
-## Conversion to OpenVINO format
+## Conversion to OpenVINO format <a name= openvino"/>
 
 1. To convert PyTorch model to ONNX format: run script in terminal `python <path_to>scripts/convert_to_onnx.py --checkpoint-path <CHECKPOINT>`.
 2. It then produces `human-pose-estimation.onnx`.
