@@ -24,7 +24,7 @@ The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbo
 * [Prerequisites](#prerequisites)
 * [Pre-trained model](#pre-trained-model)
 * [Conversion to OpenVINO format](#openvino)
-* [Local Demo](#Local-demo)
+* [Local Demo](#local-demo)
 * [Python demo](#python-demo)
 * [Citation](#citation)
 
@@ -43,7 +43,7 @@ The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbo
 The model expects normalized image (mean=[128, 128, 128], scale=[1/256, 1/256, 1/256]) in planar BGR format.
 Pre-trained on COCO model is available at: https://download.01.org/opencv/openvino_training_extensions/models/human_pose_estimation/checkpoint_iter_370000.pth.
 
-## Conversion to OpenVINO format <a name= openvino"/>
+## Conversion to OpenVINO Formatv <a name= openvino"/>
 
 1. To convert PyTorch model to ONNX format: run script in terminal `python <path_to>scripts/convert_to_onnx.py --checkpoint-path <CHECKPOINT>`.
 2. It then produces `human-pose-estimation.onnx`.
@@ -54,7 +54,7 @@ Pre-trained on COCO model is available at: https://download.01.org/opencv/openvi
 7. Then navigate to the directory human_pose_estimation_demo to run the inference on your local.
 8. Then run `<path-to>/human_pose_estimation_demo/cpp/<cpp_file> -m <path_to>/human-pose-estimation.xml -i <path_to_video_file>` for the inference on `CPU`.
 
-## Local Demo <a name="Local-demo"/>
+## Local Demo <a name="local-demo"/>
  
 1. To run the openpose demo locally, convert the pytorch model to torch script.
 2. you can do this by running `torch.jit.script(model_name)` and save the converted model
