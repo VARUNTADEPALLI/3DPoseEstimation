@@ -1,3 +1,9 @@
+# This repository is a comnination of GTRS(3D human mesh recontruction) and lightweight openpose, a 2D pose detection model.
+
+[Here](https://colab.research.google.com/drive/1jt-6hhNHWyy1oR2P6NKA4RDG0NOVNdIl?usp=sharing) is the complete demonstration of inferece of pose detection and mesh reconstruction in google colab
+<br></br>
+<br></br>
+
 # Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose
 
 This repository contains training code for the paper [Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose](https://arxiv.org/pdf/1811.12004.pdf). 
@@ -8,6 +14,8 @@ The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbo
 <p align="center">
   <img src="2DPose/lightweight/output.jpg" />
 </p>
+
+[Colab Implementation](https://colab.research.google.com/drive/1Yt0_RedU_MwWYRz100lcEnXmdJjfr2U9?usp=sharing)
 
 
 ## Table of Contents
@@ -53,13 +61,21 @@ Pre-trained on COCO model is available at: https://download.01.org/opencv/openvi
 4. Then run `python demo.py --checkpoint-path <path_to>/checkpoint_iter_370000.pth --video 0` for the inference on `CPU`.
 5. You would see the inference running in real time.
 
+[Here](https://drive.google.com/file/d/1x2-G1FtES330H6Y9A2onz4iodFzI29C_/view?usp=sharing) is a live demo for local inference.
+
 ## Python Demo <a name="python-demo"/>
 
 To run the python demo from a webcam:
 * `python demo.py --checkpoint-path <path_to>/checkpoint_iter_370000.pth --video 0`
 
 # A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose
+
 The project is an official implementation of The paper [A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose](https://arxiv.org/pdf/2111.12696).
+
+<p align="center">
+  <img src="2DPose/lightweight/result/gtrs_demo_mesh.png" />
+  <img src="2DPose/lightweight/result/gtrs_demo_pose2d.png" />
+</p>
 
 ## Installation
 
@@ -165,7 +181,7 @@ then run
 
 `python demo/run.py --gpu 0 --input_pose demo/h36m_joint_input.npy --joint_set human36` if you want to run on gpu 0.
 
-## Datasets Download(Optional)
+## Training & Data Download(Optional)
 The dataset for GTRS is  same datasets as [`pose2mesh`](https://github.com/hongsukchoi/Pose2Mesh_RELEASE). Please following the instructions to perpare datasets and files (all download links are provided in their repository).
 
 ### Data
