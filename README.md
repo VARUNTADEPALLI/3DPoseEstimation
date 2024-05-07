@@ -82,6 +82,7 @@ conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch
 We provide the  `requirements.txt` that lists the packages you need. 
 
 Although after installing you might find that some of the packages wouldn't be installed due to version mismatch and other reasons. Therein, install the reamining packages with the below commands.
+
 ```bash
 !conda install cctbx202112::brotli
 
@@ -138,7 +139,6 @@ Although after installing you might find that some of the packages wouldn't be i
 !conda install pytorch::ffmpeg
 
 !conda install conda-forge::dbus
-
 ```
 
 Remove the exclaimation when running in terminal.
@@ -148,7 +148,7 @@ Remove the exclaimation when running in terminal.
 We provide demo codes to run end-to-end inference on the test images.
 
 Download the pretrained model weights from [here](https://drive.google.com/file/d/1fIzs5zaEcqzjOmggYXlD8lcO4JAJPb4o/view?usp=sharing) and move them to the directories as mentioned below.
-
+```
 ${ROOT}  
 |-- experiment  
 |   |-- pam_h36m
