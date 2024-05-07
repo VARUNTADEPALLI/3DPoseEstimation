@@ -4,7 +4,7 @@
 <br></br>
 <br></br>
 
-## Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose
+# Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose
 
 This repository contains training code for the paper [Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose](https://arxiv.org/pdf/1811.12004.pdf). 
 It detects a skeleton (which consists of keypoints and connections between them) to identify human poses for every person inside the image. 
@@ -68,7 +68,7 @@ Pre-trained on COCO model is available at: https://download.01.org/opencv/openvi
 To run the python demo from a webcam:
 * `python demo.py --checkpoint-path <path_to>/checkpoint_iter_370000.pth --video 0`
 
-## A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose
+# A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose
 
 The project is an official implementation of The paper [A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose](https://arxiv.org/pdf/2111.12696).
 
