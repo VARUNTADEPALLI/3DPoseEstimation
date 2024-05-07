@@ -1,4 +1,4 @@
-# This repository is a comnination of GTRS(3D human mesh recontruction) and lightweight openpose, a 2D pose detection model.
+# This repository is a combination of GTRS(3D human mesh recontruction) and lightweight openpose, a 2D pose detection model.
 
 [Here](https://colab.research.google.com/drive/1jt-6hhNHWyy1oR2P6NKA4RDG0NOVNdIl?usp=sharing) is the complete demonstration of inferece of pose detection and mesh reconstruction in google colab
 <br></br>
@@ -67,6 +67,9 @@ Pre-trained on COCO model is available at: https://download.01.org/opencv/openvi
 
 To run the python demo from a webcam:
 * `python demo.py --checkpoint-path <path_to>/checkpoint_iter_370000.pth --video 0`
+  
+<br></br>
+<br></br>
 
 # A Lightweight Graph Transformer Network for Human Mesh Reconstruction from 2D Human Pose
 
