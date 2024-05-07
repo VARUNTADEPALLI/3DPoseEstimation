@@ -13,8 +13,8 @@ pip install streamlit
 	pip install torch torchvision
 ```
 
-###Load the torch script models in to your app.
+Load the torch script models in to your app.
 
-## Run the app by `streamlit run app.py`
+Run the app by `streamlit run app.py`
 
 
