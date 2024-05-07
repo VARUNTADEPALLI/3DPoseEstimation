@@ -34,7 +34,7 @@ The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbo
 The model expects normalized image (mean=[128, 128, 128], scale=[1/256, 1/256, 1/256]) in planar BGR format.
 Pre-trained on COCO model is available at: https://download.01.org/opencv/openvino_training_extensions/models/human_pose_estimation/checkpoint_iter_370000.pth.
 
-#### Conversion to OpenVINO format
+## Conversion to OpenVINO format
 
 1. To convert PyTorch model to ONNX format: run script in terminal `python <path_to>scripts/convert_to_onnx.py --checkpoint-path <CHECKPOINT>`.
 2. It then produces `human-pose-estimation.onnx`.
@@ -82,7 +82,7 @@ conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch
 We provide the  `requirements.txt` that lists the packages you need. 
 
 Although after installing you might find that some of the packages wouldn't be installed due to version mismatch and other reasons. Therein, install the reamining packages with the below commands.
-`
+```bash
 !conda install cctbx202112::brotli
 
 !conda install anaconda::matplotlib-base
@@ -138,7 +138,8 @@ Although after installing you might find that some of the packages wouldn't be i
 !conda install pytorch::ffmpeg
 
 !conda install conda-forge::dbus
-`
+
+```
 
 Remove the exclaimation when running in terminal.
 
