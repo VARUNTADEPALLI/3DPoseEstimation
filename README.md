@@ -185,6 +185,13 @@ then run
 
 `python demo/run.py --gpu 0 --input_pose demo/h36m_joint_input.npy --joint_set human36` if you want to run on gpu 0.
 
+## Local Demo <a name="local-demo"/>
+ 
+1. To run the openpose demo locally, convert the pytorch model to torch script.
+2. you can do this by running `torch.jit.script(model_name)` and save the converted model
+3. In the demo.py file load the exported torch script file by `torch.jit.load('Path_to_script.pt')`
+
+
 ## Training & Data Download(Optional)
 The dataset for GTRS is  same datasets as [`pose2mesh`](https://github.com/hongsukchoi/Pose2Mesh_RELEASE). Please following the instructions to perpare datasets and files (all download links are provided in their repository).
 
