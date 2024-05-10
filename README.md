@@ -185,7 +185,7 @@ then run
 
 `python demo/run.py --gpu 0 --input_pose demo/h36m_joint_input.npy --joint_set human36` if you want to run on gpu 0.
 
-## Local Demo <a name="local-demo"/>
+## Model Conversion <a name="model-conversion"/>
  
 1. To run the openpose demo locally, convert the pytorch model to torch script.
 2. you can do this by running `torch.jit.script(model_name)` and save the converted model
