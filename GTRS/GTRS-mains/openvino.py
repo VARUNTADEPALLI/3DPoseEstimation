@@ -161,16 +161,19 @@ def joint_coordination(joint_coord):
     idx = [0, 14, 13, 16, 15, 4, 1, 5, 2, 6, 3, 10, 7, 11, 8, 12, 9]
     joint_coord = joint_coord[idx]
     joint_coord = joint_coord.reshape(17, -1)
+    # add pelvis joint
     lhip_idx = 11
     rhip_idx = 12
     pelvis = (joint_coord[lhip_idx, :] + joint_coord[rhip_idx, :]) * 0.5
     pelvis = pelvis.reshape(1, 2)
     joint_coord = np.concatenate((joint_coord, pelvis))
+    # add neck
     lshoulder_idx = 5
     rshoulder_idx = 6
     neck = (joint_coord[lshoulder_idx, :] + joint_coord[rshoulder_idx, :]) * 0.5
     neck = neck.reshape(1, 2)
     joint_coord = np.concatenate((joint_coord, neck))
+    # optimizing cam param
     bbox = get_bbox(joint_coord)
     bbox1 = process_bbox(bbox.copy(), aspect_ratio=1.0, scale=1.25)
     bbox2 = process_bbox(bbox.copy())
