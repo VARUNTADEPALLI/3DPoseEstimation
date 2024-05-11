@@ -21,7 +21,8 @@ pip install torch torchvision
 Then,
 
 1. Load the torch script models or openvino models in to your app and modify the already existing path.
-2. Run the app by `streamlit run app.py`.
+2. Navigate the app.py file in the repository
+3. Run the app by `streamlit run app.py`.
 
 
 
