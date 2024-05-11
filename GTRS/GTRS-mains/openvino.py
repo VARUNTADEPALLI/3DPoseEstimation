@@ -178,7 +178,6 @@ def joint_coordination(joint_coord):
     bbox1 = process_bbox(bbox.copy(), aspect_ratio=1.0, scale=1.25)
     bbox2 = process_bbox(bbox.copy())
     proj_target_joint_img, trans = j2d_processing(joint_coord.copy(), (500, 500), bbox1, 0, 0, None)
-
     joint_img, _ = j2d_processing(joint_coord.copy(), (384, 288), bbox2, 0, 0, None)
     joint_img = joint_img[:, :2]
     joint_img /= np.array([[384, 288]])
