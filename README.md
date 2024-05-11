@@ -185,11 +185,21 @@ then run
 
 `python demo/run.py --gpu 0 --input_pose demo/h36m_joint_input.npy --joint_set human36` if you want to run on gpu 0.
 
+This demo would be based on the input_pose of the already trained image. If you want to get the mesh generated according to your own input pose, follow the below command.
+
+`python demo/run.py --gpu 0 --input_pose demo/<path_to_.npy file_generated_from_openpose> --joint_set coco --input_image <path_to_image>` if you want to run on gpu 0.
+
 ## Model Conversion <a name="model-conversion"/>
- 
+
+### conversion to torch script
 1. To run the openpose demo locally, convert the pytorch model to torch script.
 2. you can do this by running `torch.jit.script(model_name)` and save the converted model
 3. In the demo.py file load the exported torch script file by `torch.jit.load('Path_to_script.pt')`
+
+### conversion to openvino
+1. If you want to convert the model to openvino, navigate to the openvino.py file in the GTRS directory and run `python openvino.py`
+2. We initially converted the pytorch models to torch script, so we load the torch script model and convert it openvino format.4
+3. The openvino.py file consists of the code references from keypoints.py, val.py from openpose and  aug_utils.py from GTRS to get the keypoints, group them and re-arrange the joint cordinates
 
 
 ## Training & Data Download(Optional)
