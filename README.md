@@ -198,7 +198,7 @@ This demo would be based on the input_pose of the already trained image. If you 
 
 ### conversion to openvino
 1. If you want to convert the model to openvino, navigate to the openvino.py file in the GTRS directory and run `python openvino.py`
-2. We initially converted the pytorch models to torch script, so we load the torch script model and convert it openvino format.4
+2. We initially converted the pytorch models to torch script, so we load the torch script model and convert it openvino format.
 3. The openvino.py file consists of the code references from keypoints.py, val.py from openpose and  aug_utils.py from GTRS to get the keypoints, group them and re-arrange the joint cordinates
 
 
