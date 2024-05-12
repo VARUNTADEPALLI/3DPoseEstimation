@@ -202,7 +202,7 @@ This demo would be based on the input_pose of the already trained image. If you 
 2. We initially converted the pytorch models to torch script, so we load the torch script model and convert it openvino format.
 3. The openvino.py file consists of the code references from [keypoints.py](https://github.com/VARUNTADEPALLI/3DPoseEstimation/blob/main/2DPose/lightweight/modules/keypoints.py), [val.py](https://github.com/VARUNTADEPALLI/3DPoseEstimation/blob/main/2DPose/lightweight/val.py) from openpose and  [aug_utils.py](https://github.com/VARUNTADEPALLI/3DPoseEstimation/blob/main/GTRS/GTRS-mains/lib/aug_utils.py) from GTRS to get the keypoints, group them and re-arrange the joint cordinates
 
-Please find the converted models [here](https://drive.google.com/file/d/1EgbE3d_aOmCNmn3N_KyZa6oQNY3uDW8C/view?usp=sharing)
+Please find the converted models [here](https://drive.google.com/drive/folders/1IEAq7zfpQkOGaXZy17y6tDvZx0vUDYsl?usp=sharing)
 
 ## Training & Data Download(Optional)
 The dataset for GTRS is  same datasets as [`pose2mesh`](https://github.com/hongsukchoi/Pose2Mesh_RELEASE). Please following the instructions to perpare datasets and files (all download links are provided in their repository).
