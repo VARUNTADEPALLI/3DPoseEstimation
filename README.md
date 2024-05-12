@@ -196,6 +196,7 @@ This demo would be based on the input_pose of the already trained image. If you 
 2. you can do this by running `torch.jit.script(model_name)` and save the converted model
 3. In the demo.py file load the exported torch script file by `torch.jit.load('Path_to_script.pt')`
 
+
 ### conversion to openvino
 1. If you want to convert the model to openvino, navigate to the openvino.py file in the GTRS directory and run `python openvino.py`
 2. We initially converted the pytorch models to torch script, so we load the torch script model and convert it openvino format.
