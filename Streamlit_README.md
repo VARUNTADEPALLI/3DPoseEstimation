@@ -24,5 +24,4 @@ Then,
 2. Navigate the app.py file in the repository
 3. Run the app by `streamlit run app.py`.
 
-
-
+[Here](https://drive.google.com/file/d/1jI6gnrS80kuwL2LxgSqei4d1UeNPXT72/view?usp=sharing) is the demo video for streamlit app.
