@@ -266,6 +266,8 @@ Also if you prefer training from the scratch, you should pre-train PAM module fi
 ```
 python main/train.py --gpu 0,1, --cfg ./asset/yaml/pam_{input joint set}_train_{dataset name}.yml
 ```
+[Here](https://drive.google.com/file/d/1LmplO7ws46c_8pPtTYvXljS9S3TXVQ4m/view?usp=sharing) is the demo video of the results after training
+
 ## Streamlit App
 Refer to [this](https://github.com/VARUNTADEPALLI/3DPoseEstimation/blob/main/Streamlit_README.md) for the instructions on running the streamlit app
 
