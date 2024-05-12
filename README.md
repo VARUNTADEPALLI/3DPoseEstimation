@@ -47,7 +47,7 @@ Pre-trained on COCO model is available at: https://download.01.org/opencv/openvi
 
 1. To convert PyTorch model to ONNX format: run script in terminal `python <path_to>scripts/convert_to_onnx.py --checkpoint-path <CHECKPOINT>`.
 2. It then produces `human-pose-estimation.onnx`.
-3. Download the openvino toolkit from[here](https://software.intel.com/en-us/openvino-toolkit/choose-download)
+3. Download the openvino toolkit from [here](https://software.intel.com/en-us/openvino-toolkit/choose-download)
 4. Now, to convert ONNX model to OpenVINO format with Model Optimizer: run `python <path_to>mo.py --input_model human-pose-estimation.onnx --input data --mean_values data[128.0,128.0,128.0] --scale_values data[256] --output stage_1_output_0_pafs,stage_1_output_1_heatmaps`.
 5. This then produces model `human-pose-estimation.xml` and weights `human-pose-estimation.bin` in single-precision floating-point format (FP32).
 6. To run the cpp demo, donwload the [open_model_zoo](https://github.com/openvinotoolkit/open_model_zoo/tree/master).
