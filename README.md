@@ -192,7 +192,7 @@ This demo would be based on the input_pose of the already trained image. If you 
 ## Model Conversion <a name="model-conversion"/>
 
 ### conversion to torch script
-1. To run the openpose demo locally, convert the pytorch model to torch script.
+1. To run the gtrs demo locally, convert the pytorch model to torch script.
 2. you can do this by running `torch.jit.script(model_name)` and save the converted model
 3. In the demo.py file load the exported torch script file by `torch.jit.load('Path_to_script.pt')`
 
